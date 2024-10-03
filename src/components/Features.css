@@ -1,0 +1,53 @@
+.features-section {
+    padding: 50px 20px;
+    background-color: #f4f4f9;
+    text-align: center;
+  }
+  
+  .features-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #1a1a2e;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #f39c12;
+  }
+  
+  .feature-card p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .features-container {
+      flex-direction: column;
+    }
+  
+    .feature-card {
+      width: 100%;
+    }
+  }
+  
