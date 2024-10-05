@@ -4,9 +4,8 @@
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
-  text-align: center;
-  height: 500px; /* Fixed height for the results section */
-  overflow: hidden; /* Hide overflow if content exceeds */
+  text-align: center; /* Center-align text */
+  overflow: hidden;
 }
 
 .results h2 {
@@ -20,8 +19,18 @@
 
 .results-image {
   width: auto; 
-  height: 400px;
+  height: 400px; /* Adjust height as needed */
   max-width: 100%;
   border-radius: 8px;
-  margin: 20px 0; 
+  margin: 20px auto; /* Center the image by auto margins */
+  display: block; /* Make image a block element to center it */
+}
+
+.results-content {
+  position: relative;
+  z-index: 1; /* Ensure it appears above the image */
+  margin-top: -20px; /* Optional: Adjust to reduce gap between the image and content */
+  padding: 20px; /* Add some padding to content */
+  background-color: white; /* Ensure background is white to contrast against the image */
+  border-radius: 8px; /* Maintain rounded corners */
 }

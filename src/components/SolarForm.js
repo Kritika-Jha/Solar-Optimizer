@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import './SolarForm.css';
 
-function SolarForm() {
+function SolarForm({ setFormData }) {  // Add setFormData as a prop
   const [location, setLocation] = useState('');
   const [roofSize, setRoofSize] = useState('');
-  const [selectedMonth, setSelectedMonth] = useState('');
+  const [month, setMonth] = useState('');  // Update to month selection
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Implement form submission logic here, such as sending data to the backend
-    console.log({ location, roofSize, selectedMonth });
+    setFormData({ location, roofSize, month }); // Pass form data to parent
   };
 
   return (
@@ -18,30 +17,16 @@ function SolarForm() {
       <form onSubmit={handleSubmit}>
         <label>
           Location:
-          <input 
-            type="text" 
-            value={location} 
-            onChange={(e) => setLocation(e.target.value)} 
-            required 
-          />
+          <input type="text" value={location} onChange={(e) => setLocation(e.target.value)} required />
         </label>
         <label>
           Roof Size (in sq. ft.):
-          <input 
-            type="number" 
-            value={roofSize} 
-            onChange={(e) => setRoofSize(e.target.value)} 
-            required 
-          />
+          <input type="number" value={roofSize} onChange={(e) => setRoofSize(e.target.value)} required />
         </label>
         <label>
           Month:
-          <select 
-            value={selectedMonth} 
-            onChange={(e) => setSelectedMonth(e.target.value)} 
-            required
-          >
-            <option value="" disabled>Select a month</option>
+          <select value={month} onChange={(e) => setMonth(e.target.value)} required>
+            <option value="">Select a month</option>
             <option value="January">January</option>
             <option value="February">February</option>
             <option value="March">March</option>

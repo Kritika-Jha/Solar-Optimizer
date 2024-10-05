@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import SolarForm from './components/SolarForm';
@@ -8,6 +8,8 @@ import Results from './components/Results';
 import './App.css';
 
 function App() {
+  const [formData, setFormData] = useState(null); // State to hold form data
+
   return (
     <div className="App">
       <Header />
@@ -19,10 +21,10 @@ function App() {
           <Features />
         </section>
         <section id="form">
-          <SolarForm />
+          <SolarForm setFormData={setFormData} /> {/* Pass the setFormData function */}
         </section>
         <section id="results">
-          <Results />
+          {formData && <Results formData={formData} />} {/* Pass formData to Results */}
         </section>
       </main>
       <Footer />

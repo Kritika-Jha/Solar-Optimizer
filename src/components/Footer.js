@@ -16,7 +16,7 @@ function Footer() {
 
   return (
     <footer>
-      <p>&copy; 2024 Solar Panel Optimization App. All rights reserved.</p>
+      <p>&copy; 2024 Solarizer. All rights reserved.</p>
       <p>Made with love by HackSurge</p>
       <form onSubmit={handleSubmit} className="footer-contact-form">
         <input
