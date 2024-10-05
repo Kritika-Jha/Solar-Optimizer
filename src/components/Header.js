@@ -1,11 +1,14 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSolarPanel } from '@fortawesome/free-solid-svg-icons'; // Import the solar panel icon
 import './Header.css';
 
 const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <img src="logo.png" alt="Solar Optimizer" />
+        <FontAwesomeIcon icon={faSolarPanel} size="2x" /> {/* Add the FontAwesome icon */}
+        <span className="logo-text">Solarizer</span> {/* Add the name next to the icon */}
       </div>
       <nav>
         <ul>
