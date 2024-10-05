@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Solar-Optimizer/static/css/main.867e713a.css",
-    "main.js": "/Solar-Optimizer/static/js/main.d7b048b5.js",
+    "main.css": "/Solar-Optimizer/static/css/main.cb441659.css",
+    "main.js": "/Solar-Optimizer/static/js/main.b99f8089.js",
     "index.html": "/Solar-Optimizer/index.html",
-    "main.867e713a.css.map": "/Solar-Optimizer/static/css/main.867e713a.css.map",
-    "main.d7b048b5.js.map": "/Solar-Optimizer/static/js/main.d7b048b5.js.map"
+    "main.cb441659.css.map": "/Solar-Optimizer/static/css/main.cb441659.css.map",
+    "main.b99f8089.js.map": "/Solar-Optimizer/static/js/main.b99f8089.js.map"
   },
   "entrypoints": [
-    "static/css/main.867e713a.css",
-    "static/js/main.d7b048b5.js"
+    "static/css/main.cb441659.css",
+    "static/js/main.b99f8089.js"
   ]
 }
