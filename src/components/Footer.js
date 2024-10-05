@@ -7,9 +7,9 @@ function Footer() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Implement form submission logic here
+   
     console.log({ email, message });
-    // Clear the form
+  
     setEmail('');
     setMessage('');
   };
