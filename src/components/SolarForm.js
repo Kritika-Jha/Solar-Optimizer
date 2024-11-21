@@ -112,7 +112,7 @@ const handleMapClick = useCallback(
     <div className="solar-form">
       <h2>Solar Panel Optimization Form</h2>
       {/* Map Integration */}
-      <div id="map" style={{ height: "400px", width: "100%" }}></div>
+      <div id="map" style={{ height: "500px", width: "100%"}}></div>
       <form onSubmit={handleSubmit}>
         <label>
           Location (Auto-Filled):
@@ -137,6 +137,16 @@ const handleMapClick = useCallback(
           <select value={month} onChange={(e) => setMonth(e.target.value)} required>
             <option value="">Select a month</option>
             <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="February">February</option>
+            <option value="February">February</option>
+            <option value="February">February</option>
+            <option value="February">February</option>
+            <option value="February">February</option>
+            <option value="February">February</option>
+            <option value="February">February</option>
+            <option value="February">February</option>
+            <option value="February">February</option>
             <option value="February">February</option>
             {/* Add more months */}
           </select>
