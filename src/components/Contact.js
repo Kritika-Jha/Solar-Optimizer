@@ -8,7 +8,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Implement contact form submission logic here
+    
     console.log({ name, email, message });
   };
 
